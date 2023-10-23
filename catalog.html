@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231023143348">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231023154359">
     <title>Каталог мебели</title>
 </head>
 <body>
@@ -284,8 +284,9 @@
 
                             <div class="swiper-slide catalog-free-consultation">
                                 <div class="catalog-free-consultation__title">Желаете получить бесплатную консультацию?</div>
-                                <form class="catalog-free-consultation__form">
+                                <form class="catalog-free-consultation__form wrap-phone-js">
                                     <input type="text" class="input-mask-js catalog-free-consultation__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" title="Минимум 7 символов после +373" required>
+                                    <div class="phone-error">Введите минимум 7 символов после +373</div>
                                     <button class="button button-white catalog-free-consultation__button">Заказать звонок</button>
                                 </form>
                             </div>
@@ -914,7 +915,7 @@
 </main>
 
     <button class="button button-to-top hidden" type="button" aria-label="Go to top" data-to-top="">
-    <svg width="24" height="24">
+    <svg width="20" height="20">
         <use href="images/icons/icons.svg#arrow-top"></use>
     </svg>
 </button>
@@ -922,12 +923,14 @@
     <div class="container">
 
         <div class="footer__row">
-            <div class="footer-free-consultation">
+            <div class="wrap-phone-js footer-free-consultation">
                 <div class="footer-free-consultation__title">Желаете получить бесплатную консультацию?</div>
                 <form class="footer-free-consultation__form">
-                    <input type="text" class="input-mask-js footer-free-consultation__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" title="Минимум 7 символов после +373" required>
+                    <input type="text" class="input-mask-js footer-free-consultation__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" required>
+
                     <button class="button button-white footer-free-consultation__button">Заказать звонок</button>
                 </form>
+                <div class="phone-error">Введите минимум 7 символов после +373</div>
             </div>
 
             <div class="footer__inner">
@@ -999,14 +1002,15 @@
         </div>
         <div class="popup__content">
             <div class="popup__title">Закажите бесплатную консультацию и наши менеджеры свяжутся с Вами</div>
-            <form class="popup__form">
+            <form class="wrap-phone-js popup__form">
                 <input type="text" class="input-mask-js popup__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" title="Минимум 7 символов после +373" required>
+                <div class="phone-error">Введите минимум 7 символов после +373</div>
                 <button class="button popup__button">Заказать звонок</button>
             </form>
         </div>
     </div>
 </div>
 
-<script src="js/app.min.js?_v=20231023143348"></script>
+<script src="js/app.min.js?_v=20231023154359"></script>
 </body>
 </html>
