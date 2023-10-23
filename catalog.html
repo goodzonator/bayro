@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="ru">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231022140845">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231023143348">
     <title>Каталог мебели</title>
 </head>
 <body>
@@ -124,32 +124,792 @@
     </div>
 </header>
 
-    <main class="page tabs-js">
+    <main class="catalog-page page">
     <div class="container">
-        <div class="section-title">Каталог мебели</div>
+        <section class="tabs-js">
+            <h2 class="section-title page-title">Каталог мебели</h2>
 
-        <div class="tabs">
-            <div class="swiper tabs-catalog-js">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <button class="tabs__button active" data-target="#kitchens">Кухни</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <button class="tabs__button" data-target="#bathrooms">Ванные</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <button class="tabs__button" data-target="#sleeping">Спальные</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <button class="tabs__button" data-target="#hallways">Прихожие</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <button class="tabs__button" data-target="#living-rooms">Гостиные</button>
+            <div class="tabs">
+                <div class="swiper tabs-slider-js">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <button class="tabs__button active" data-target="#kitchens">Кухни</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="tabs__button" data-target="#bathrooms">Ванные</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="tabs__button" data-target="#sleeping">Спальные</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="tabs__button" data-target="#hallways">Прихожие</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <button class="tabs__button" data-target="#living-rooms">Гостиные</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div class="tabs-content">
+                <div id="kitchens" class="tabs-content__item active">
+                    <div class="catalog__short-descr">
+                        Senectus laoreet commodo pulvinar egestas dui amet.
+                        Condimentum habitant diam dictum sit.
+                        Et in faucibus varius sit et diam massa. Augue ac massa vel orci purus.
+                    </div>
+
+                    <div class="swiper catalog-js catalog__list">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-1.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-1.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-2.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-2.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-3.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-3.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-4.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-4.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-5.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-5.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-6.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-6.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-7.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-7.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-8.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-8.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog-free-consultation">
+                                <div class="catalog-free-consultation__title">Желаете получить бесплатную консультацию?</div>
+                                <form class="catalog-free-consultation__form">
+                                    <input type="text" class="input-mask-js catalog-free-consultation__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" title="Минимум 7 символов после +373" required>
+                                    <button class="button button-white catalog-free-consultation__button">Заказать звонок</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-columns">
+                        <div class="catalog-column__left"></div>
+                        <div class="catalog-column__right"></div>
+                    </div>
+                </div>
+
+                <div id="bathrooms" class="tabs-content__item">
+                    <div class="catalog__short-descr">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Animi aperiam et ex exercitationem labore magni molestiae,
+                        perferendis quisquam reprehenderit sapiente.
+                    </div>
+
+                    <div class="swiper catalog-js catalog__list">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-2.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-2.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-1.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-1.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-3.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-3.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-4.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-4.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-5.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-5.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-6.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-6.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-7.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-7.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-8.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-8.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog-free-consultation">
+                                <div class="catalog-free-consultation__title">Желаете получить бесплатную консультацию?</div>
+                                <form class="catalog-free-consultation__form">
+                                    <input type="text" class="input-mask-js catalog-free-consultation__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" title="Минимум 7 символов после +373" required>
+                                    <button class="button button-white catalog-free-consultation__button">Заказать звонок</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="catalog-columns">
+                        <div class="catalog-column__left"></div>
+                        <div class="catalog-column__right"></div>
+                    </div>
+                </div>
+
+                <div id="sleeping" class="tabs-content__item">
+                    <div class="catalog__short-descr">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, ipsum.
+                    </div>
+
+                    <div class="swiper catalog-js catalog__list">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-5.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-5.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-1.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-1.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-3.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-3.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-4.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-4.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-1.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-1.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-6.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-6.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-7.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-7.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-8.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-8.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog-free-consultation">
+                                <div class="catalog-free-consultation__title">Желаете получить бесплатную консультацию?</div>
+                                <form class="catalog-free-consultation__form">
+                                    <input type="text" class="input-mask-js catalog-free-consultation__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" title="Минимум 7 символов после +373" required>
+                                    <button class="button button-white catalog-free-consultation__button">Заказать звонок</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="catalog-columns">
+                        <div class="catalog-column__left"></div>
+                        <div class="catalog-column__right"></div>
+                    </div>
+                </div>
+
+                <div id="hallways" class="tabs-content__item">
+                    <div class="catalog__short-descr">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aliquam aliquid amet atque consectetur cupiditate deserunt doloribus expedita,
+                        fuga fugiat illum itaque iusto neque placeat porro praesentium quibusdam
+                        reprehenderit saepe sed suscipit totam ut vel voluptate voluptatem voluptates
+                        voluptatum. Iure, veritatis?
+                    </div>
+
+                    <div class="swiper catalog-js catalog__list">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-3.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-3.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-2.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-2.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-1.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-1.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-4.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-4.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-5.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-5.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-6.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-6.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-7.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-7.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-8.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-8.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog-free-consultation">
+                                <div class="catalog-free-consultation__title">Желаете получить бесплатную консультацию?</div>
+                                <form class="catalog-free-consultation__form">
+                                    <input type="text" class="input-mask-js catalog-free-consultation__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" title="Минимум 7 символов после +373" required>
+                                    <button class="button button-white catalog-free-consultation__button">Заказать звонок</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="catalog-columns">
+                        <div class="catalog-column__left"></div>
+                        <div class="catalog-column__right"></div>
+                    </div>
+                </div>
+
+                <div id="living-rooms" class="tabs-content__item">
+                    <div class="catalog__short-descr">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+
+                    <div class="swiper catalog-js catalog__list">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-7.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-7.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-2.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-2.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-1.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-1.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-4.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-4.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-5.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-5.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-6.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-6.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-3.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-3.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog__item">
+                                <a href="#" class="animate-img catalog__link">
+                                    <picture><source srcset="images/catalog/image-8.webp" type="image/webp"><img class="catalog__img" src="images/catalog/image-8.jpg" alt=""></picture>
+                                </a>
+                                <div class="catalog__content">
+                                    <span class="catalog__series">Серия Napoli</span>
+                                    <h3 class="catalog__title">
+                                        <a href="#">Кухня для ценителей изысканного вина</a>
+                                    </h3>
+                                    <div class="catalog__price">
+                                        от 10 000 леев
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide catalog-free-consultation">
+                                <div class="catalog-free-consultation__title">Желаете получить бесплатную консультацию?</div>
+                                <form class="catalog-free-consultation__form">
+                                    <input type="text" class="input-mask-js catalog-free-consultation__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" title="Минимум 7 символов после +373" required>
+                                    <button class="button button-white catalog-free-consultation__button">Заказать звонок</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="catalog-columns">
+                        <div class="catalog-column__left"></div>
+                        <div class="catalog-column__right"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-description">
+            <div class="main-description__inner">
+                <div class="main-description__logo">
+                    <img src="images/components/logo-descr.png" width="124" height="25" alt="BAYRO Logo">
+                </div>
+
+                <h1 class="section-title">Кухни от фабрики BAYRO — это четкость форм, продуманная эргономика.</h1>
+
+                <div class="user-content">
+                    <p>Кухни в различных стилях отвечают самым высоким требованиям качества и функциональности.
+                        Широкий размерный ряд позволяет создавать на их основе угловые и прямолинейные кухни.
+                        У нас Вы найдете кухни от минимальных размеров до ...бесконечности!</p>
+                    <p>Для каждой модели нашей коллекции можно подобрать цвет или комбинацию цветов и текстур.
+                        Например, для создания элегантного интерьера прекрасно подойдет белая кухня в сочетании
+                        с текстурой дерева. А любителям креативных решений могут понравиться открытые модули сочных,
+                        насыщенных оттенков.</p>
+                    <p>Если вам сложно определиться, идею дизайна кухни подскажут фото, представленные на нашем сайте.
+                        Кроме того, на страничках коллекций вы найдете готовые решения для помещений различного метража,
+                        варианты фасадов, ручек и внутреннего наполнения.</p>
+                    <p>Ну, а если вы хотите купить уже готовую кухню — приглашаем в наши фирменные шоурумы.
+                        Ваш личный ассистент разработает проект вашей кухни по индивидуальным размерам, под Ваш
+                        интерьер,
+                        сориентирует по ценам и оформит заказ.</p>
+                    <p>В каталоге BAYRO представлен большой выбор готовых решений на любой вкус. При желании вы можете
+                        сами выбрать цвет, форму и материалы для изготовления кухни. Закажите кухонный гарнитур
+                        европейского качества с гарантией на 2 года.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 
@@ -183,7 +943,7 @@
                             <a href="/">Главная</a>
                         </li>
                         <li>
-                            <a href="#">Каталог мебели</a>
+                            <a href="/catalog.html">Каталог мебели</a>
                         </li>
                         <li>
                             <a href="#">О компании</a>
@@ -247,6 +1007,6 @@
     </div>
 </div>
 
-<script src="js/app.min.js?_v=20231022140845"></script>
+<script src="js/app.min.js?_v=20231023143348"></script>
 </body>
 </html>
