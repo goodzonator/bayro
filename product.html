@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231102154145">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231103135258">
     <title>Ванная Spark</title>
 </head>
 <body>
@@ -390,9 +390,9 @@
                     </svg>
 
                     <div class="product-info__content">
-                        <div class="content user-content">
+                        <div class="content">
                             <div class="title">Гарантия</div>
-                            <div class="text">
+                            <div class="text user-content">
                                 <p>Eu sed non dictum morbi rhoncus sed habitant libero.</p>
                                 <ul>
                                     <li>современный уют в классике,</li>
@@ -400,13 +400,13 @@
                                     <li>роскошную эклектику,</li>
                                     <li>брутальный лофт в стекле, дереве и бетоне.</li>
                                 </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, velit.</p>
-                                            <ol>
-                                                <li>современный уют в классике,</li>
-                                                <li>тепло в скандинавском стиле,</li>
-                                                <li>роскошную эклектику,</li>
-                                                <li>брутальный лофт в стекле, дереве и бетоне.</li>
-                                            </ol>
+
+                                <ol>
+                                    <li>современный уют в классике,</li>
+                                    <li>тепло в скандинавском стиле,</li>
+                                    <li>роскошную эклектику,</li>
+                                    <li>брутальный лофт в стекле, дереве и бетоне.</li>
+                                </ol>
                             </div>
                             <a href="images/components/pdf-example.pdf" class="download-pdf" target="_blank">
                                 <svg width="20" height="20">
@@ -913,13 +913,20 @@
     <section class="contact-partner-wrap">
     <div class="container">
         <div class="contact-partner">
-            <a class="video" data-fancybox data-type="iframe" data-src="https://youtu.be/ZkW-K5RQdzo?si=8oWag7X4CD_nTKE-" href="javascript:;">
-                <picture><source srcset="images/product/video-preview.webp" type="image/webp"><img src="images/product/video-preview.jpg" alt=""></picture>
+            <div class="video video-player video-player-js">
+                <video class="video-js" autoplay muted>
+                    <source src="images/components/video-demo-preview.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+            </div>
+
+            <a class="video video-link video-link-js" style="display: none;" data-fancybox data-type="iframe" data-src="https://youtu.be/4NRXx6U8ABQ?si=RmIH4MuvYJ1kaOrj" href="javascript:;">
+                <picture><source srcset="images/components/preview-video.webp" type="image/webp"><img src="images/components/preview-video.jpg" alt=""></picture>
                 <span class="play">
-                        <svg width="24" height="24">
-                            <use href="images/icons/icons.svg#play"></use>
-                        </svg>
-                    </span>
+                    <svg width="24" height="24">
+                        <use href="images/icons/icons.svg#play"></use>
+                    </svg>
+                </span>
             </a>
             <div class="content">
                 <h1 class="section-title">Закажите кухню Nicolle у нас.</h1>
@@ -1938,35 +1945,12 @@
         <div class="footer__row">
             <div class="wrap-phone-js footer-free-consultation">
                 <div class="footer-free-consultation__title">Желаете получить бесплатную консультацию?</div>
-                <form class="callback-form-js footer-free-consultation__form">
-                    <input type="text" class="input-mask-js footer-free-consultation__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" required>
-                    <div class="phone-error">Введите минимум 7 символов после +373</div>
-
-                    <div class="form-checkbox view-2">
-                        <div class="form-checkbox__inner">
-                            <label class="checkbox">
-                                <input type="checkbox" class="checkbox-js" required>
-                                <svg width="18" height="18">
-                                    <use href="images/icons/icons.svg#check"></use>
-                                </svg>
-                            </label>
-                            <div class="form-checkbox__text">
-                                <p>Согласие <a href="https://goodzonator.github.io/bayro/privacy-policy.html" target="_blank">на обработку персональных данных</a></p>
-                                <p>Ваши контактные данные не будут распространяться третьим лицам без вашего согласия
-                                    и будут использованы исключительно для связи с вами по вашей заявке.</p>
-                            </div>
-                        </div>
-                        <div class="checkbox-error">Необходимо согласиться с условиями</div>
-                    </div>
-                    <div class="recaptcha-text view-2">
-                        This site is protected by reCAPTCHA and the Google
-                        <a href="https://policies.google.com/privacy" target="_blank" rel="nofollow">Privacy Policy</a>
-                        and <a href="https://policies.google.com/terms" target="_blank" rel="nofollow">Terms of Service</a>
-                        apply.
-                    </div>
-
-                    <button class="button button-white footer-free-consultation__button">Заказать звонок</button>
-                </form>
+                <div class="footer-free-consultation__text">
+                    Выгодные предложения, прогрессивные скидки от объема реализии, выгодные предложения.
+                </div>
+                <button class="button button-white footer-free-consultation__button" data-fancybox data-src="#popup">
+                    Заказать звонок
+                </button>
             </div>
 
             <div class="footer__inner">
@@ -1985,7 +1969,8 @@
                             <a href="https://goodzonator.github.io/bayro/about-company.html">О компании</a>
                         </li>
                         <li>
-                            <a href="https://goodzonator.github.io/bayro/documentation-for-clients.html">Скачать сертификаты</a>
+                            <a href="https://goodzonator.github.io/bayro/documentation-for-clients.html">Скачать
+                                сертификаты</a>
                         </li>
                         <li>
                             <a href="https://goodzonator.github.io/bayro/where-buy.html">Где купить</a>
@@ -2046,23 +2031,27 @@
         <div class="popup__content">
             <div class="popup__title">Закажите бесплатную консультацию и наши менеджеры свяжутся с Вами</div>
             <form class="wrap-phone-js callback-form-js popup__form">
-                <input type="text" class="input-mask-js popup__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" title="Минимум 7 символов после +373" required>
-                <div class="phone-error">Введите минимум 7 символов после +373</div>
+                <div class="form-group">
+                    <input type="text" class="input-mask-js popup__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" title="Минимум 7 символов после +373" required>
+                    <div class="phone-error">Введите минимум 7 символов после +373</div>
+                </div>
                 <div class="form-checkbox">
-                    <div class="form-checkbox__inner">
-                        <label class="checkbox">
-                            <input type="checkbox" class="checkbox-js" required>
-                            <svg width="18" height="18">
-                                <use href="images/icons/icons.svg#check"></use>
-                            </svg>
-                        </label>
-                        <div class="form-checkbox__text">
-                            <p>Согласие <a href="https://goodzonator.github.io/bayro/privacy-policy.html" target="_blank">на обработку персональных данных</a></p>
-                            <p>Ваши контактные данные не будут распространяться третьим лицам без вашего согласия
-                                и будут использованы исключительно для связи с вами по вашей заявке.</p>
-                        </div>
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox-js" required>
+                        <svg width="18" height="18">
+                            <use href="images/icons/icons.svg#check"></use>
+                        </svg>
+                    </label>
+                    <div class="form-checkbox__text">
+                        <p>Согласие <a href="https://goodzonator.github.io/bayro/privacy-policy.html" target="_blank">на
+                            обработку персональных данных</a></p>
                     </div>
                     <div class="checkbox-error">Необходимо согласиться с условиями</div>
+                </div>
+
+                <div class="form-checkbox__text-2">Ваши контактные данные не будут распространяться третьим лицам без
+                    вашего согласия
+                    и будут использованы исключительно для связи с вами по вашей заявке.
                 </div>
 
                 <div class="recaptcha-text">
@@ -2084,6 +2073,6 @@
     </div>
 </div>
 
-<script src="js/app.min.js?_v=20231102154145"></script>
+<script src="js/app.min.js?_v=20231103135258"></script>
 </body>
 </html>
