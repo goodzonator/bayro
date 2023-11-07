@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231106151454">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231107175410">
     <title>Ванная Spark</title>
 </head>
 <body>
@@ -929,7 +929,7 @@
                 </span>
             </a>
             <div class="content">
-                <h1 class="section-title">Закажите кухню Nicolle у нас.</h1>
+                <h2 class="section-title">Закажите кухню Nicolle у нас.</h2>
                 <div class="text">Универсальная, просторная, функциональная, практичная. С гарантией 2 года.</div>
                 <button class="button" data-fancybox data-src="#popup">Оставить заявку</button>
             </div>
@@ -938,22 +938,26 @@
 </section>
 
     <div class="book-list-wrap">
-        <svg width="80" height="80" class="book-list-arrow book-list-arrow__prev" id="prevPage">
-            <use href="images/icons/icons.svg#chevron-left"></use>
-        </svg>
-        <div id="book-list" class="book-list">
-            <div style="background-image:url('images/test/page-1.png');"></div>
-            <div style="background-image:url('images/test/page-2.png');"></div>
-            <div style="background-image:url('images/test/page-3.png');"></div>
-            <div style="background-image:url('images/test/page-4.png');"></div>
-            <div style="background-image:url('images/test/page-5.png');"></div>
-            <div style="background-image:url('images/test/page-6.png');"></div>
-            <div style="background-image:url('images/test/page-7.png');"></div>
-            <div style="background-image:url('images/test/page-8.png');"></div>
+        <div class="swiper-arrow book-list-arrow book-list-arrow__prev" id="prevPage">
+            <svg width="20" height="20">
+                <use href="images/icons/icons.svg#chevron-left"></use>
+            </svg>
         </div>
-        <svg width="80" height="80" class="book-list-arrow book-list-arrow__next" id="nextPage">
-            <use href="images/icons/icons.svg#chevron-right"></use>
-        </svg>
+        <div id="book-list" class="book-list">
+            <div style="background:#fff;"></div> 
+            <div style="background-image:url('images/test/new/page-1.jpg');"></div>
+            <div style="background-image:url('images/test/new/page-2.jpg');"></div>
+            <div style="background-image:url('images/test/new/page-3.jpg');"></div>
+            <div style="background-image:url('images/test/new/page-4.jpg');"></div>
+            <div style="background-image:url('images/test/new/page-5.jpg');"></div>
+            <div style="background-image:url('images/test/new/page-6.jpg');"></div>
+            <div style="background-image:url('images/test/new/page-7.jpg');"></div>
+        </div>
+        <div class="swiper-arrow book-list-arrow book-list-arrow__next" id="nextPage">
+            <svg width="20" height="20">
+                <use href="images/icons/icons.svg#chevron-right"></use>
+            </svg>
+        </div>
 
         <div class="book-list-buttons">
             <a href="images/components/pdf-example.pdf" class="download-pdf" target="_blank">
@@ -2035,8 +2039,8 @@
             <div class="popup__title">Закажите бесплатную консультацию и наши менеджеры свяжутся с Вами</div>
             <form class="wrap-phone-js callback-form-js popup__form">
                 <div class="form-group">
-                    <input type="text" class="input-mask-js popup__input" pattern="^\+373\s(\d\s\d\s\d\s\d\s\d\s\d\s\d _|\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d)$" title="Минимум 7 символов после +373" required>
-                    <div class="phone-error">Введите минимум 7 символов</div>
+                    <input type="text" class="input-mask-js popup__input" pattern="^\+373\s\d\s\d\s\d\s\d\s\d\s\d\s\d\s\d$" required>
+                    <div class="phone-error">Введите 8 цифр после кода +373</div>
                 </div>
                 <div class="form-checkbox">
                     <label class="checkbox">
@@ -2076,6 +2080,6 @@
     </div>
 </div>
 
-<script src="js/app.min.js?_v=20231106151454"></script>
+<script src="js/app.min.js?_v=20231107175410"></script>
 </body>
 </html>
